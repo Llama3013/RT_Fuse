@@ -96,12 +96,12 @@ namespace RT_Fuse
 					explosionRadius = Mathf.Clamp(explosionRadius, 1.5f, 14.9f);
 					GenExplosion.DoExplosion(
 						culprit.Position, powerNet.Map, explosionRadius, DamageDefOf.Flame,
-						null, -1, -1f, null, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
+						null);
 					if (explosionRadius > 3.5f)
 					{
 						GenExplosion.DoExplosion(
 							culprit.Position, powerNet.Map, explosionRadius * 0.3f, DamageDefOf.Bomb,
-							null, -1, -1f, null, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
+							null);
 					}
 
 					if (totalEnergy == totalEnergyHistoric)
